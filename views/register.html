@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+            <form action="/signup" method="post">
+                Username  : <input type="text" name="username" required><br>
+                Password : <input type="password" name="password" required><br>
+                Konfirmasi Password:<input type="password" name="confirm" required><br>
+                Nama Lengkap : <input type="text" name="name" required><br>
+                Email:<input type="email" name="email" required><br>
+                Nomor Telepon : <input type="text" name="phone" required><br>
+                Alamat :<input type="text" name="address" required><br>
+                Date Created : <input type="text" name="date"><br>  
+                <input type="submit" >
+            </form>
+{% endblock %}
