@@ -5,7 +5,8 @@ var table=function(table){
 	table.string('password');
 	table.string('address');
 	table.string('phone');
-	table.date('date-created');
+	table.date('date-created'),
+	table.text('base64');
 }
 
 exports.up = function(knex, Promise) {

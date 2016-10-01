@@ -10,10 +10,11 @@ var	bodyParser = require('body-parser'),
     NLTunnel = require('node-local-tunnel'),
     router = require('./routes'),options=require('./config/Options'),
     sessionStore = new mysqlStore(options.mySqlSession);
- 
-    middleware=function(app){
 
-    NLTunnel.client(options.tunnel);    
+    var encryption=require('./utilities/encryption');
+    var decryption=require('./utilities/decryption');
+    middleware=function(app){
+    NLTunnel.client(options.tunnel); 
         compression = require('compression');
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded());

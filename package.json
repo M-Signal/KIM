@@ -13,7 +13,8 @@
     "https": "^1.0.0",
     "localtunnel": "^1.8.1",
     "node-local-tunnel": "^0.1.5",
-    "nunjucks": "^2.5.2"
+    "nunjucks": "^2.5.2",
+    "vhost": "^3.0.2"
   },
   "devDependencies": {},
   "scripts": {

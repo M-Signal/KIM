@@ -1,10 +1,9 @@
 var express = require('express'),
-h = require('../handle').user,
+h = require('../handler').user,
 	r = express.Router(),
 	router;
 	router = function(app){
 	r.get('/', function(req,res){
-    	console.log('masuk');
         res.render('index.html');
     });
     r.post('/result',h.result);
